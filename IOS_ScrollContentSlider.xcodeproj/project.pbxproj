@@ -16,6 +16,8 @@
 		F2525AD31C515E59002BDCCD /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2525AD01C515E59002BDCCD /* 01.jpg */; };
 		F2525AD41C515E59002BDCCD /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2525AD11C515E59002BDCCD /* 02.jpg */; };
 		F2525AD51C515E59002BDCCD /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2525AD21C515E59002BDCCD /* 03.jpg */; };
+		F2525AD91C51702D002BDCCD /* VTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2525AD81C51702D002BDCCD /* VTest.xib */; };
+		F2525ADC1C5170CC002BDCCD /* VTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2525ADB1C5170CC002BDCCD /* VTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		F2525AD01C515E59002BDCCD /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		F2525AD11C515E59002BDCCD /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 		F2525AD21C515E59002BDCCD /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		F2525AD81C51702D002BDCCD /* VTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VTest.xib; sourceTree = "<group>"; };
+		F2525ADA1C5170CC002BDCCD /* VTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTest.h; sourceTree = "<group>"; };
+		F2525ADB1C5170CC002BDCCD /* VTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,9 @@
 		F2525AD71C516F2A002BDCCD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2525AD81C51702D002BDCCD /* VTest.xib */,
+				F2525ADA1C5170CC002BDCCD /* VTest.h */,
+				F2525ADB1C5170CC002BDCCD /* VTest.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 			files = (
 				F2525AD51C515E59002BDCCD /* 03.jpg in Resources */,
 				F2525AD41C515E59002BDCCD /* 02.jpg in Resources */,
+				F2525AD91C51702D002BDCCD /* VTest.xib in Resources */,
 				F2525AC81C515C6F002BDCCD /* LaunchScreen.storyboard in Resources */,
 				F2525AC51C515C6F002BDCCD /* Assets.xcassets in Resources */,
 				F2525AD31C515E59002BDCCD /* 01.jpg in Resources */,
@@ -185,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2525ADC1C5170CC002BDCCD /* VTest.m in Sources */,
 				F2525AC01C515C6F002BDCCD /* Home.m in Sources */,
 				F2525ABD1C515C6F002BDCCD /* AppDelegate.m in Sources */,
 				F2525ABA1C515C6F002BDCCD /* main.m in Sources */,

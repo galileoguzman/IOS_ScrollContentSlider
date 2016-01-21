@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  VTest.h
 //  IOS_ScrollContentSlider
 //
 //  Created by Galileo Guzman on 21/01/16.
@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "VTest.h"
 
-@interface Home : UIViewController<UIScrollViewDelegate>
-@property (strong, nonatomic) IBOutlet UIScrollView *scSlide;
-
+@interface VTest : UIView
+@property (strong, nonatomic) IBOutlet UIImageView *imgPage;
+@property (strong, nonatomic) IBOutlet UILabel *lblTitlePage;
 
 @end
-

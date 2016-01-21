@@ -42,7 +42,7 @@
     // Add loop for set image on scroll
     
     for (int i = 0; i < [self.arImages count]; i++) {
-        VTest *page = [[[NSBundle mainBundle] loadNibNamed:@"VTest" owner:self options:nil] objectAtIndex:0];
+        VTest *page = [[VTest alloc] init];
         page.frame = CGRectMake(self.scSlide.frame.size.width*i, 0, self.scSlide.frame.size.width, self.scSlide.frame.size.height);
         page.imgPage.image = [UIImage imageNamed:self.arImages[i]];
         page.lblTitlePage.text = self.arTitles[i];

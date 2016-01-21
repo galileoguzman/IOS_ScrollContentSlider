@@ -10,12 +10,18 @@
 
 @implementation VTest
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(VTest *) init{
+    VTest *result = nil;
+    NSArray* elements = [[NSBundle mainBundle] loadNibNamed: NSStringFromClass([self class]) owner:self options: nil];
+    for (id anObject in elements)
+    {
+        if ([anObject isKindOfClass:[self class]])
+        {
+            result = anObject;
+            break;
+        }
+    }
+    return result;
 }
-*/
 
 @end

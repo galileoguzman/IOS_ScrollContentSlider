@@ -28,10 +28,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="p8L-Nb-RYB">
-                                <rect key="frame" x="20" y="58" width="280" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" id="gqO-dS-KWi" userLabel="vContentSlider">
+                                <rect key="frame" x="20" y="67" width="280" height="160"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="p8L-Nb-RYB" userLabel="svSlider">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Ozf-tL-Uma"/>
+                                        </connections>
+                                    </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="UR9-Yw-2qB" userLabel="imgSlide">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.25538870159999999" green="0.67668784640000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

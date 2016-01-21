@@ -64,9 +64,8 @@
 		F2525AB71C515C6F002BDCCD /* IOS_ScrollContentSlider */ = {
 			isa = PBXGroup;
 			children = (
+				F2525AD61C515E7C002BDCCD /* Main */,
 				F2525ACF1C515E46002BDCCD /* Media */,
-				F2525ABB1C515C6F002BDCCD /* AppDelegate.h */,
-				F2525ABC1C515C6F002BDCCD /* AppDelegate.m */,
 				F2525ABE1C515C6F002BDCCD /* Home.h */,
 				F2525ABF1C515C6F002BDCCD /* Home.m */,
 				F2525AC11C515C6F002BDCCD /* Main.storyboard */,
@@ -94,6 +93,15 @@
 				F2525AD21C515E59002BDCCD /* 03.jpg */,
 			);
 			name = Media;
+			sourceTree = "<group>";
+		};
+		F2525AD61C515E7C002BDCCD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2525ABB1C515C6F002BDCCD /* AppDelegate.h */,
+				F2525ABC1C515C6F002BDCCD /* AppDelegate.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

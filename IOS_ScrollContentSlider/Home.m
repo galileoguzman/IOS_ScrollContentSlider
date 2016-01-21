@@ -16,12 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)initController{
+    // Initial controller
+    
+    self.scSlide.pagingEnabled = YES;
+    self.scSlide.showsHorizontalScrollIndicator = NO;
+    self.scSlide.delegate = self;
 }
 
 @end

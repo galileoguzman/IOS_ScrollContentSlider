@@ -13,6 +13,9 @@
 		F2525AC31C515C6F002BDCCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2525AC11C515C6F002BDCCD /* Main.storyboard */; };
 		F2525AC51C515C6F002BDCCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2525AC41C515C6F002BDCCD /* Assets.xcassets */; };
 		F2525AC81C515C6F002BDCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2525AC61C515C6F002BDCCD /* LaunchScreen.storyboard */; };
+		F2525AD31C515E59002BDCCD /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2525AD01C515E59002BDCCD /* 01.jpg */; };
+		F2525AD41C515E59002BDCCD /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2525AD11C515E59002BDCCD /* 02.jpg */; };
+		F2525AD51C515E59002BDCCD /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2525AD21C515E59002BDCCD /* 03.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		F2525AC41C515C6F002BDCCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2525AC71C515C6F002BDCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2525AC91C515C6F002BDCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2525AD01C515E59002BDCCD /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		F2525AD11C515E59002BDCCD /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		F2525AD21C515E59002BDCCD /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		F2525AB71C515C6F002BDCCD /* IOS_ScrollContentSlider */ = {
 			isa = PBXGroup;
 			children = (
+				F2525ACF1C515E46002BDCCD /* Media */,
 				F2525ABB1C515C6F002BDCCD /* AppDelegate.h */,
 				F2525ABC1C515C6F002BDCCD /* AppDelegate.m */,
 				F2525ABE1C515C6F002BDCCD /* Home.h */,
@@ -77,6 +84,16 @@
 				F2525AB91C515C6F002BDCCD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2525ACF1C515E46002BDCCD /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				F2525AD01C515E59002BDCCD /* 01.jpg */,
+				F2525AD11C515E59002BDCCD /* 02.jpg */,
+				F2525AD21C515E59002BDCCD /* 03.jpg */,
+			);
+			name = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2525AD51C515E59002BDCCD /* 03.jpg in Resources */,
+				F2525AD41C515E59002BDCCD /* 02.jpg in Resources */,
 				F2525AC81C515C6F002BDCCD /* LaunchScreen.storyboard in Resources */,
 				F2525AC51C515C6F002BDCCD /* Assets.xcassets in Resources */,
+				F2525AD31C515E59002BDCCD /* 01.jpg in Resources */,
 				F2525AC31C515C6F002BDCCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,6 +39,13 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="Ozf-tL-Uma"/>
                                         </connections>
                                     </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="2FF-Ig-WTu">
+                                        <rect key="frame" x="8" y="81" width="304" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="changePage" destination="BYZ-38-t0r" eventType="valueChanged" id="bzf-DW-lm5"/>
+                                        </connections>
+                                    </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -46,6 +53,7 @@
                         <color key="backgroundColor" red="0.25538870159999999" green="0.67668784640000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="pager" destination="2FF-Ig-WTu" id="cjN-2K-Ag3"/>
                         <outlet property="scSlide" destination="p8L-Nb-RYB" id="oIx-Jp-mGu"/>
                     </connections>
                 </viewController>

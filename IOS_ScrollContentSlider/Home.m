@@ -52,6 +52,31 @@
     
     self.scSlide.contentSize = CGSizeMake(self.scSlide.frame.size.width*3, self.scSlide.frame.size.height);
     
+    // pager
+    [self.pager setNumberOfPages:[self.arTitles count]];
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    // Calculating the page index. Not hard to understand it.
+    int page = floor(scrollView.contentOffset.x / [UIScreen mainScreen].bounds.size.width);
+    
+    // Set the page index as the current page to the page control.
+    [self.pager setCurrentPage:page];
+}
+
+- (IBAction)changePage {
+    // Get the index of the page.
+    int pageIndex = (int)[self.pager currentPage];
+    
+    // We need to move the scroll to the correct page.
+    // Get the scroll's frame.
+    CGRect newFrame = [self.scSlide frame];
+    
+    // Calculate the x-coordinate of the frame where the scroll should go to.
+    newFrame.origin.x = newFrame.size.width * pageIndex;
+    
+    // Scroll the frame we specified above.
+    [self.scSlide scrollRectToVisible:newFrame animated:YES];
 }
 
 @end

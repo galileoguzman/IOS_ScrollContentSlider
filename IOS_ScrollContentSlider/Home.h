@@ -11,7 +11,8 @@
 
 @interface Home : UIViewController<UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *scSlide;
-
-
+@property (strong, nonatomic) IBOutlet UIPageControl *pager;
+- (IBAction)changePage;
+@property (nonatomic) int totalPages;
 @end
 

@@ -11,5 +11,6 @@
 @interface VTest : UIView
 @property (strong, nonatomic) IBOutlet UIImageView *imgPage;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitlePage;
+@property (strong, nonatomic) IBOutlet UILabel *lblBackgroundTitle;
 
 @end

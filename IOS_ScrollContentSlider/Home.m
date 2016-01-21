@@ -71,7 +71,7 @@
     [self.scSlide addSubview:p3];
     [self.scSlide addSubview:lbl3];*/
     
-    VTest *p1 = [[[NSBundle mainBundle] loadNibNamed:@"VTest" owner:self options:nil] objectAtIndex:0];
+    /*VTest *p1 = [[[NSBundle mainBundle] loadNibNamed:@"VTest" owner:self options:nil] objectAtIndex:0];
     p1.frame = CGRectMake(self.scSlide.frame.size.width*0, 0, self.scSlide.frame.size.width, 250);
     p1.imgPage.image = [UIImage imageNamed:self.arImages[0]];
     p1.lblTitlePage.text = self.arTitles[0];
@@ -87,7 +87,15 @@
     p3.frame = CGRectMake(self.scSlide.frame.size.width*2, 0, self.scSlide.frame.size.width, 250);
     p3.imgPage.image = [UIImage imageNamed:self.arImages[2]];
     p3.lblTitlePage.text = self.arTitles[2];
-    [self.scSlide addSubview:p3];
+    [self.scSlide addSubview:p3];*/
+    
+    for (int i = 0; i < [self.arImages count]; i++) {
+        VTest *page = [[[NSBundle mainBundle] loadNibNamed:@"VTest" owner:self options:nil] objectAtIndex:0];
+        page.frame = CGRectMake(self.scSlide.frame.size.width*i, 0, self.scSlide.frame.size.width, self.scSlide.frame.size.height);
+        page.imgPage.image = [UIImage imageNamed:self.arImages[i]];
+        page.lblTitlePage.text = self.arTitles[i];
+        [self.scSlide addSubview:page];
+    }
     
     self.scSlide.contentSize = CGSizeMake(self.scSlide.frame.size.width*3, self.scSlide.frame.size.height);
     
